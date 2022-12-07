@@ -2,13 +2,13 @@
 
 import math
 
-'''d = abs(int(input("С какой точностью вывести число ПИ? ")))
+d = abs(int(input("С какой точностью вывести число ПИ? ")))
 
 def getPi(d: int):
     mnogitel = 10 ** d 
     return int(math.pi * mnogitel) / mnogitel
 
-print(getPi(d))'''
+print(getPi(d))
 
 # 2) Задайте последовательность чисел. Напишите программу,
 #  которая выведет список неповторяющихся элементов исходной
@@ -21,5 +21,3 @@ def getUnique(list: list[int]):
    print(unique)
    
 getUnique(d)
-
-print(a)
