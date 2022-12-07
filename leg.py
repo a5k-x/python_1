@@ -1,29 +1,25 @@
-# Задайте список из нескольких чисел. Напишите программу, 
-# которая найдёт сумму элементов списка, стоящих на нечётной позиции.
-
-lis = [2, 3, 5, 9, 3]
-
-def getSum(lis: list):
-    sum: int = 0
-    for i in range(0,len(lis)):
-        if (i % 2 != 0):
-            sum += lis[i]
-    return sum
-
-print(getSum(lis))
-
-# Напишите программу, которая найдёт произведение пар чисел списка. 
-# Парой считаем первый и последний элемент, второй и предпоследний и т.д.
+# 1) Вычислить число Pi c заданной точностью d, не используя ф. round()
 
 import math
 
-lis = [2, 3, 4, 5, 6]
+'''d = abs(int(input("С какой точностью вывести число ПИ? ")))
 
-def getPair(lis: list):
-    result = []
-    lenghtLis = len(lis)
-    for i in range(0, math.ceil(lenghtLis/2)):
-        result.append(lis[i] * lis[lenghtLis-i-1])
-    print(result)    
+def getPi(d: int):
+    mnogitel = 10 ** d 
+    return int(math.pi * mnogitel) / mnogitel
 
-getPair(lis)
+print(getPi(d))'''
+
+# 2) Задайте последовательность чисел. Напишите программу,
+#  которая выведет список неповторяющихся элементов исходной
+#  последовательности.(Вывод тех элементов, которые были без повторов)
+
+d: list[int] = [1, 2, 3, 2, 4, 4, 8, 8]
+a = []
+def getUnique(list: list[int]):
+   unique = {i for i in list if list.count(i) <= 1}
+   print(unique)
+   
+getUnique(d)
+
+print(a)
